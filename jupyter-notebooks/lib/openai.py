@@ -11,7 +11,7 @@ def gpt4(prompt):
 		model="gpt-4",
     temperature=0.0,
 		messages=[
-      {"role": "system", "content": "You are a material science PHD student."},
+      {"role": "system", "content": "You are a helpful assistant."},
       {"role": "user", "content": f"{prompt}"}
 		]
 	)
@@ -23,7 +23,7 @@ def gpt_35_turbo_16k(prompt):
 		model="gpt-3.5-turbo-16k",
     temperature=0.0,
 		messages=[
-      {"role": "system", "content": "You are a material science PHD student."},
+      {"role": "system", "content": "You are a helpful assistant."},
       {"role": "user", "content": f"{prompt}"}
 		]
 	)
