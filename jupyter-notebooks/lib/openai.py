@@ -17,3 +17,15 @@ def gpt4(prompt):
 	)
 
 	return completion.choices[0].message.content
+	
+def gpt_35_turbo_16k(prompt):
+	completion = openai.ChatCompletion.create(
+		model="gpt-3.5-turbo-16k",
+    temperature=0.0,
+		messages=[
+      {"role": "system", "content": "You are a helpful assistant."},
+      {"role": "user", "content": f"{prompt}"}
+		]
+	)
+
+	return completion.choices[0].message.content
